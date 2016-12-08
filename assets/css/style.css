@@ -6,10 +6,15 @@ html {
   background: linear-gradient(to left, #4ECDC4 , #556270);
 }
 
+#status {
+  padding-top: 30px;
+  border-top: 1px dashed white;
+}
+
 .display {
   border: 2px dashed white;
   width: 400px;
-  height: 300px;
+  height: 450px;
   float: left;
   text-align: center;
 }
@@ -32,6 +37,8 @@ html {
 
 
 .console {
+  border: 1px solid white;
+  padding: 10px;
   float: right;
   width: 400px;
 }
