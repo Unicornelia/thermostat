@@ -14,21 +14,35 @@
 <body>
 
   <div class='display'>
-    <h1>Temperature:</h1></br>
-    <div class='temp-display'></div>
-  <h1>Energy Usage:</h1></br>
-    <div class='energy-display'></div>
-  </br><h2 id='status'>Power saving mode is</h2><span id="power-saving-status">On</span>
-  </div>
+    <h1>Temperature</h1>
+    <div id='temperature'><h2></h2></div>
+    <h1>Energy Usage</h1></br>
+    <div id='energy-display'></div>
+  </br><h1 id='status'>Status</h1><span id="powersaving">Power Saving On</span>
+</div>
 
-  <div class='console'>
-    <button id="temperature-up">+</button>
-    <button id="temperature-down">-</button></br>
-    <button id="powersaving-on">Power Saving On</button>
-    <button id="powersaving-off">Power Saving Off</button></br></br>
-    <button>Show Energy Usage</button>
-    <button id="temperature-reset">Reset Temperature</button>
-  </div>
+<div class='console'>
+  <h2>Set Temperature</h2>
+  <button id="temperature-up">+</button>
+  <button id="temperature-down">-</button></br>
+  <h2>Power Saving</h2>
+  <button id="powersaving-on">On</button>
+  <button id="powersaving-off">Off</button></br></br>
+  <button>Show Energy Usage</button>
+  <button id="reset">Reset Temperature</button>
+</div>
+
+<section>
+  <h1>Current temperature: <span id="current-temperature">20</span></h1>
+  <select id="current-city">
+    <option value="london">London</option>
+    <option value="newyork">New York</option>
+    <option value="paris">Paris</option>
+    <option value="tokyo">Tokyo</option>
+    <option value="budapest">Budapest</option>
+    <option value="subotica">Subotica</option>
+  </select>
+</section>
 
 </body>
 
