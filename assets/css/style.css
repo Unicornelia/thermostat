@@ -12,9 +12,13 @@ html {
 }
 
 .display {
+  border-radius: 20px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
   border: 5px solid white;
-  width: 35%;
-  height: 50%;
+  width: 25%;
+  height: 40%;
   float: left;
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px 0px black;
@@ -26,18 +30,21 @@ html {
   background-color: #bdbdbd;
   margin: auto;
   font-weight: bold;
-  padding-top: 10px;
+  padding: 10px;
   border: 1px solid white;
   width: 10%;
   height: 20%;
+  border-radius: 5px;
 }
 
 #energy-display {
   background-color: #bdbdbd;
   margin: auto;
+  padding: 10px;
   border: 1px solid white;
   width: 10%;
   height: 20%;
+  border-radius: 5px;
 }
 
 .low-usage {
@@ -53,10 +60,12 @@ html {
 }
 
 .console {
+  border-radius: 20px;
+  position: relative;
   border: 3px solid white;
-  padding: 10px;
+  padding: 20px 0px 10px 0px;
   float: right;
-  width: 30%;
+  width: 25%;
   height: 50%;
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px 0px black;
@@ -77,13 +86,13 @@ button, .button:before, .button:after {
 }
 
 button {
-  font-size: 25px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 15px;
   text-align: center;
   color: rgba(0,0,0,0.5);
   text-shadow: rgba(0,0,0,0.1) 0px -2px 1px, rgb(255,255,255) 0px 1px 2px;
-  padding: 10px;
-  margin: 10px auto;
+  padding: 5px;
+  margin: 5px auto;
   position: static;
   z-index: 50;
   cursor: pointer;
@@ -102,12 +111,10 @@ button {
   -moz-transition:    -moz-box-shadow 0s ease-in-out;
   -o-transition:      -o-box-shadow 0s ease-in-out;
   transition:         box-shadow 0s ease-in-out;
-
   background-image:   -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.2) 0%, hsla(0,0%,100%,0) 100%),
   -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 100%),
   -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 100%),
   -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 100%),
-
   -webkit-repeating-radial-gradient(  50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
   -webkit-repeating-radial-gradient(  50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
   -webkit-repeating-radial-gradient(  50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,0) 2.2%);
@@ -157,26 +164,56 @@ button:active {
 }
 
 button:active:before {
-  height: 650%;
+  height: 60%;
 }
 
-section {
-  height: 200px;
-  width: 100px;
-  padding-top: 10px;
+.select-temp {
   margin: auto;
-}
-
-select {
-  text-align: center;
+  float: none;
   font-size: 20px;
    background: transparent;
-   width: 200px;
-   padding: 5px;
+   padding: 15px;
+   font-weight: bold;
    font-size: 16px;
    line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
+   border: 1px dashed white;
+   border-radius: 20;
+   height: 30px;
    -webkit-appearance: none;
+   text-align: center;
+   height: 100%;
+   width: 30%;
+   padding: 20px 10px 10px 10px;
+   border-radius: 20px;
+ -webkit-box-shadow: 10px 10px 5px 0px black;
+   -moz-box-shadow: 10px 10px 5px 0px black;
+   box-shadow: 10px 10px 5px 0px black;
+ }
+
+ select {
+   margin: 15px;
+   border-radius: 20px;
+   font-size: 16px;
+ }
+
+ img {
+   border: 2px solid white;
+   margin: auto;
+   height: 98%;
+   width: 98%;
+ }
+
+ footer {
+   font-size: 10px;
+   position: absolute;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     padding: 1rem;
+     text-align: center;
+     border-top: 1px dashed white;
+ }
+
+ span {
+   color: #FFF;
  }

@@ -2,26 +2,23 @@
 <html>
 <head>
   <title>Thermostat!</title>
-
   <link rel='stylesheet' type='text/css' href='css/style.css'>
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/src/thermostat.js"></script>
   <script src="js/jquery.js"></script>
-
 </head>
-
 
 <body>
 
-  <div class='display'>
+<section class='display'>
     <h1>Temperature</h1>
     <div id='temperature'><h2></h2></div>
     <h1>Energy Usage</h1></br>
-    <div id='energy-display'></div>
+    <div id='energy-display'><h2></h2></div>
   </br><h1 id='status'>Status</h1><span id="powersaving">Power Saving On</span>
-</div>
+</section>
 
-<div class='console'>
+<aside class='console'>
   <h2>Set Temperature</h2>
   <button id="temperature-up">+</button>
   <button id="temperature-down">-</button></br>
@@ -30,10 +27,11 @@
   <button id="powersaving-off">Off</button></br></br>
   <button>Show Energy Usage</button>
   <button id="reset">Reset Temperature</button>
-</div>
+</aside>
 
-<section>
-  <h1>Current temperature: <span id="current-temperature">20</span></h1>
+<div class='select-temp'>
+<article>
+  <h1>Current temperature: </br></br><span id="current-temperature">20</span></h1>
   <select id="current-city">
     <option value="london">London</option>
     <option value="newyork">New York</option>
@@ -42,8 +40,11 @@
     <option value="budapest">Budapest</option>
     <option value="subotica">Subotica</option>
   </select>
-</section>
+</article>
+<img src='img/storm.gif'></img>
+</div>
 
+<footer>Thermostat app in JS by @unicornelia</footer>
 </body>
 
 </html>

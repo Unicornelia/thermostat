@@ -29,7 +29,7 @@ $(document).ready(function () {
     updateTemperature(); //update view
   });
 
-  $('#energy-usage').click(function() {
+  $('#energy-display').click(function() {
     thermostat.energyUsage();
     updateUsage();
   });
@@ -45,7 +45,8 @@ $(document).ready(function () {
   };
 
   function updateUsage() {
-    $('#energy-display').attr('class', thermostat.energyUsage());
+    $('#temperature').text(thermostat.degrees);
+    $('#temperature').attr('class', thermostat.energyUsage());
   };
 
   function displayWeather(city) {
