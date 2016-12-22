@@ -6,19 +6,70 @@ html {
   background: linear-gradient(to left, #4ECDC4 , #556270);
 }
 
+h1 {
+  text-align: center;
+}
+
+a {
+  color: #C0C0C0;
+}
+
+a:hover{
+  color: #A9A9A9;
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav {
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.nav ul {
+  position: relative;
+  display: inline;
+}
+
+.navbar-right {
+  float: right;
+  list-style-type: none;
+  margin: 10px;
+  display: block;
+}
+
+.navbar-left {
+  float: left;
+  list-style-type: none;
+  margin: 10px;
+  display: block;
+}
+
+
 #status {
   padding-top: 30px;
   border-top: 1px dashed white;
+}
+
+#red {
+  color: #b20000;
+}
+
+#blue {
+  color: #0f0f4c;
+}
+
+#green {
+  color: #005900;
 }
 
 .display {
   border-radius: 20px;
   position: relative;
   padding-bottom: 20px;
-  margin-bottom: 50px;
   border: 5px solid white;
   width: 25%;
-  height: 40%;
+  height: 35%;
   float: left;
   text-align: center;
   -webkit-box-shadow: 10px 10px 5px 0px black;
@@ -37,26 +88,28 @@ html {
   border-radius: 5px;
 }
 
-#energy-display {
+#energy-display-box {
   background-color: #bdbdbd;
   margin: auto;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid white;
-  width: 10%;
-  height: 20%;
+  width: 90%;
   border-radius: 5px;
 }
 
 .low-usage {
-  background-color: green;
+  background-color: #005900;
+  color: white;
 }
 
 .medium-usage {
-  background-color: black;
+  background-color: #0f0f4c;
+  color: white;
 }
 
 .high-usage {
-  background-color: red;
+  background-color: #b20000;
+  color: white;
 }
 
 .console {
@@ -205,11 +258,11 @@ button:active:before {
 
  footer {
    font-size: 10px;
-   position: absolute;
+   position: relative;
      right: 0;
      bottom: 0;
      left: 0;
-     padding: 1rem;
+     margin-top: 15em;
      text-align: center;
      border-top: 1px dashed white;
  }

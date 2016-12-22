@@ -2,12 +2,12 @@ $(document).ready(function () {
   var thermostat = new Thermostat();
   updateTemperature();
 
-  $("#temperature-up").click(function() { //event listener
+  $("#temperature-up").click(function() {
     thermostat.increase(1); //update model
     updateTemperature(); //update view
   });
 
-  $("#temperature-down").click(function() { //event listener
+  $("#temperature-down").click(function() {
     thermostat.decrease(1); //update model
     updateTemperature(); //update view
   });
@@ -24,14 +24,14 @@ $(document).ready(function () {
     updateTemperature(); //update view
   });
 
-  $("#reset").click(function() { //event listener
+  $("#reset").click(function() {
     thermostat.reset(); //update model
     updateTemperature(); //update view
   });
 
   $('#energy-display').click(function() {
-    thermostat.energyUsage();
-    updateUsage();
+    thermostat.energyUsage(); //update model
+    updateUsage(); //update view
   });
 
   $('#current-city').change(function(event) {
@@ -42,11 +42,12 @@ $(document).ready(function () {
 
   function updateTemperature() {
     $('#temperature').text(thermostat.degrees);
+    // $('#temperature').attr('class', thermostat.energyUsage());
   };
 
   function updateUsage() {
     $('#temperature').text(thermostat.degrees);
-    $('#temperature').attr('class', thermostat.energyUsage());
+    $('#energy-display').attr('class', thermostat.energyUsage());
   };
 
   function displayWeather(city) {

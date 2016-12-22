@@ -10,41 +10,57 @@
 
 <body>
 
-<section class='display'>
+  <nav class='nav'>
+    <ul class='navbar-left'>
+      <li><a href='file:///Users/unicornelia/github/makers_course/thermostat/assets/index.html'>Home</a></li>
+    </ul>
+
+    <ul class='navbar-right'>
+      <li><a href='file:///Users/unicornelia/github/makers_course/thermostat/assets/about.html'>About</a></li>
+    </ul>
+  </nav>
+
+  <section class='display'>
     <h1>Temperature</h1>
     <div id='temperature'><h2></h2></div>
-    <h1>Energy Usage</h1></br>
-    <div id='energy-display'><h2></h2></div>
-  </br><h1 id='status'>Status</h1><span id="powersaving">Power Saving On</span>
-</section>
 
-<aside class='console'>
-  <h2>Set Temperature</h2>
-  <button id="temperature-up">+</button>
-  <button id="temperature-down">-</button></br>
-  <h2>Power Saving</h2>
-  <button id="powersaving-on">On</button>
-  <button id="powersaving-off">Off</button></br></br>
-  <button>Show Energy Usage</button>
-  <button id="reset">Reset Temperature</button>
-</aside>
+  </br><h1>Energy Usage</h1>
+    <div id='energy-display-box'>
+      <p id='red'>Red = high-usage</p>
+      <p id='blue'>Blue = medium-usage</p>
+      <p id='green'>Green = low-usage</p>
+    </div>
 
-<div class='select-temp'>
-<article>
-  <h1>Current temperature: </br></br><span id="current-temperature">20</span></h1>
-  <select id="current-city">
-    <option value="london">London</option>
-    <option value="newyork">New York</option>
-    <option value="paris">Paris</option>
-    <option value="tokyo">Tokyo</option>
-    <option value="budapest">Budapest</option>
-    <option value="subotica">Subotica</option>
-  </select>
-</article>
-<img src='img/storm.gif'></img>
-</div>
+    </br><h1 id='status'>Status</h1><span id="powersaving">Power Saving On</span>
+  </section>
 
-<footer>Thermostat app in JS by @unicornelia</footer>
+  <aside class='console'>
+    <h2>Set Temperature</h2>
+    <button id="temperature-up">+</button>
+    <button id="temperature-down">-</button></br>
+    <h2>Power Saving</h2>
+    <button id="powersaving-on">On</button>
+    <button id="powersaving-off">Off</button></br></br>
+    <button id='energy-display'>Show Energy Usage</button>
+    <button id="reset">Reset Temperature</button>
+  </aside>
+
+  <div class='select-temp'>
+    <article>
+      <h1>Current temperature: </br></br><span id="current-temperature">20</span></h1>
+      <select id="current-city">
+        <option value="london">London</option>
+        <option value="newyork">New York</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="budapest">Budapest</option>
+        <option value="subotica">Subotica</option>
+      </select>
+    </article>
+    <img src='img/storm.gif'></img>
+  </div>
+
+  <footer>Thermostat app in JS by @unicornelia</footer>
 </body>
 
 </html>
