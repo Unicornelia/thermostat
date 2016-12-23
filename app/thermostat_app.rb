@@ -3,11 +3,10 @@ require 'sinatra/base'
 class Thermostat < Sinatra::Base
 
   enable :sessions
-  register Sinatra::Flash
   use Rack::MethodOverride
 
   get '/' do
-    erb :index
+    erb :'index'
   end
 
 
